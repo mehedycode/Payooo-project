@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <!-- tailwind link  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<!-- phone add -->
+<body class="h-screen flex items-center justify-center">
+  
+<div class="mockup-phone">
+  <div class="camera"></div>
+  <div class="display">
+    <div class="artboard artboard-demo phone-2">
+      
+
+     <!-- welcome msg -->
+        <h1 class="text-2xl font-bold my-3 text-center">🔥 Welcome to Payooo!</h1>
+        
+        <!-- current balance  -->
+        <div class="flex items-center justify-center ">
+          <div class="stats shadow">
+            <div class="stat">
+              <div class="stat-value text-xl text-center" id="current_balance">10000</div>
+              <div class="stat-title text-sm">Available Balance</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- divider -->
+  <div class="divider"></div>
+
+
+  <!-- btns -->
+  <div class="btns">
+    <button id="adds_money" class="btn btn-lg">Add Money</button>
+    <button id="cash_outs" class="btn btn-lg">Cash Out</button>
+  </div>
+
+  <!--add money forms -->
+        <div id="add_money_form" class="flex justify-center mt-4 ">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+
+              <!-- Balance adds from -->
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Balance Amount</span>
+                </label>
+
+                <!-- input -->
+                <input id="amount_of_balance" type="text" placeholder="Type Amount Of Balance" class="input input-bordered" required  autocomplete="off"/>
+              </div>
+
+              <!-- pins Check from -->
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+
+                <!-- pins From -->
+                <input id="pin_number" type="password" placeholder="Pin" class="input input-bordered" required autocomplete="off" />
+              </div>
+
+              <!-- Balance add btns -->
+              <div class="form-control mt-6">
+                <button id="add_money" class="btn btn-primary">Add Money</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- cash out forms  -->
+       
+        <div id="cash_out_form" class="hidden mt-4">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+        
+              <!-- Balance cash out from -->
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Balance Amount</span>
+                </label>
+        
+                <!-- input -->
+                <input id="amount_of_balance_cash" type="text" placeholder="Type Amount Of Balance" class="input input-bordered"
+                  required autocomplete="off" />
+              </div>
+        
+              <!-- pins Check from -->
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+        
+                <!-- pins From -->
+                <input id="pin_number_cash" type="password" placeholder="Pin" class="input input-bordered" required
+                  autocomplete="off" />
+              </div>
+        
+              <!-- Balance cash out -->
+              <div class="form-control mt-6">
+                <button id="cash_out_money" class="btn btn-primary">Cash Out</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<script src="./js/home.js"></script>
+<script src="js/cashout.js"></script>
+<script src="js/swith.js"></script>
+</body>
+</html>
